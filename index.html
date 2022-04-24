@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d7541a8dc5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Momentum</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="src/background.js" defer></script>
+    <script src="src/login_form.js" defer></script>
+    <script src="src/clock.js" defer></script>
+    <script src="src/date.js" defer></script>
+    <script src="src/monthly_section.js" defer></script>
+    <script src="src/task.js" defer></script>
+    <script src="src/weather.js" defer></script>
+    <script src="src/quotes.js " defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="login__container">
+        <form class="login__form hidden">
+          <input
+            class="login__input"
+            type="text"
+            placeholder="What is your name?"
+            required
+          />
+          <button class="login__button">Log In</button>
+        </form>
+      </section>
+      <section class="greeting__container hidden">
+        <h1 class="greeting"></h1>
+        <div class="align-date-clock">
+          <span class="today"></span>
+          <span class="clock">Current Time</span>
+        </div>
+      </section>
+    </header>
+
+    <section class="containers">
+      <section class="monthly__container">
+        <form class="monthly__form">
+          <h2>Monthly Goal</h2>
+          <input
+            class="monthly__input"
+            type="text"
+            placeholder="Write your Goal"
+            required
+          />
+        </form>
+        <ul class="monthly__lists">
+          <li class="monthly__list">
+            <button class="monthly__delete"></button>
+            <span class="monthly__goal"></span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="task__container">
+        <form class="task__form">
+          <h2>To-Do</h2>
+          <input
+            class="task__input"
+            type="text"
+            placeholder="Write your task"
+            required
+          />
+        </form>
+        <ul class="task__lists">
+          <li class="task__list">
+            <button class="task__delete"></button>
+            <span class="task"></span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="weather__container">
+        <div class="weather">
+          <h2>Current Local Weather</h2>
+          <div class="wether__icon"><i class="fa-solid fa-cloud-sun"></i></div>
+
+          <h3>Place</h3>
+          <span class="city"></span>
+          <h3>Weather</h3>
+          <span class="localWeather"></span>
+          <h3>Temperature</h3>
+          <span class="temperature"></span>
+          <h3>Wind Speed</h3>
+          <span class="wind"></span>
+        </div>
+      </section>
+    </section>
+
+    <footer class="quote__container">
+      <div class="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </footer>
+  </body>
+</html>
